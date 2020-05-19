@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './Views/Home/home';
+import Layout from './Layout/layout';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-    <Home />,
-  document.getElementById('root')
+    <Layout />,
+    document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -1,0 +1,40 @@
+div.Header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    z-index: 99999999999999;
+}
+
+.LinksMenu{
+    color: white;
+    margin-right: 5%;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    font-size: 24px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.LinksMenu:after{
+    content: '';
+    display: block;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+.LinksMenu:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+
+.LinksMenuActive::after{
+    transform: scaleX(1);
+}
