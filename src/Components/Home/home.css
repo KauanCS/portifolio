@@ -66,10 +66,3 @@ img.LaptopImage{
 @media (min-width: 1200px) { ... }
 
 */  
-
-
-@media (max-width: 1380px) { 
-    div.ContainerBackground{
-        height: 100%;
-    }
-}
