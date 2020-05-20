@@ -3,12 +3,14 @@ div.ContainerHome {
     align-items: center;
     width: 100%;
     height: 100vh;
-    margin: 0 5%;
+    background-image: url(../../Images/Background.jpg);
+    background-position: center center;
+    background-size: cover;
 }
-
-h1.TitleHome {
-    color: white;
-    font-size: 6vw !important;
+div.ContainerHomeContent{
+    display: flex;
+    width: 100%;
+    margin: 0 5%;
 }
 div.ContainerApresentation{
     display: flex;
@@ -18,33 +20,12 @@ div.ContainerApresentation{
     line-height: .2;
     width: 50%;
     justify-content: center;
-    padding: 2%;
     position: relative;
-    z-index: 2;
 }
 
-div.ContainerBackground{
-    display: flex;
-    position: fixed;
-    z-index: 0;
-    width: 100%;
-    left: 0
-}
-
-div.ContainerText{
-    display: flex;
-    justify-content: center;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index: 1;
-}
-
-h1.BackgroundText{
-    color: rgba(0, 0, 0,.15);
-    font-size: 20vw;
-    display: flex;
-    margin: 10% 0 0 0 ;
+h1.TitleHome {
+    color: white;
+    font-size: 6vw !important;
 }
 
 h1.MainTitle{
@@ -53,25 +34,15 @@ h1.MainTitle{
     font-size: 5vw !important;
 }
 
-img.BackgroundImage {
-    max-width: 100%;
-    position: relative;
-    z-index: 0;
-}
-
-div.ContainerHomeImage{
+div.ContainerLaptopImage{
     display: flex;
-    position: fixed;
-    z-index: 3;
-    bottom: 0;
-    right: 0;
-    margin: 0 5% 5% 0;
+    flex: 1;
 }
 
-img.HomeImage{
-    max-height: 700px;
-    min-height: 300px;
-    width: auto;
+img.LaptopImage{
+    width: 100%;
+    height: auto;
+
 }
 
 /* 
@@ -100,6 +71,5 @@ img.HomeImage{
 @media (max-width: 1380px) { 
     div.ContainerBackground{
         height: 100%;
-        background-size: cover;
     }
 }
