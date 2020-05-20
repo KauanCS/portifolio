@@ -19,6 +19,7 @@ const Home = () => {
 
             <div className="ContainerApresentation">
                 <Typing startDelay={500} speed={120}>
+                    <h1 className="TitleHome">Hi,</h1>
                     <h1 className="TitleHome">I'm</h1>
                     <h1 className="TitleHome">Kauan C. S.</h1>
                 </Typing>
